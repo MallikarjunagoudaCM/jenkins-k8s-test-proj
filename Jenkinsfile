@@ -6,6 +6,7 @@ pipeline {
                 label "Linux_VM"
                 }
       steps {
+        sh "whoami"
        sh "kubectl get pods"
       }
     }
