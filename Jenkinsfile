@@ -1,11 +1,10 @@
 pipeline {
   agent none
-  
-  node('Linux_VM') {
-    // some block
-}
   stages{
     stage ('Test') {
+      agent {
+                label "Linux_CM"
+                }
       steps {
        echo "Hi Mallik"
       }
