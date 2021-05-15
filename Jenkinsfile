@@ -6,7 +6,7 @@ pipeline {
                 label "Linux_VM"
                 }
       steps {
-       echo "Hi Mallik"
+       sh "kubectl get pods"
       }
     }
   }
