@@ -3,7 +3,7 @@ pipeline {
   stages{
     stage ('Test') {
       agent {
-                label "Linux_CM"
+                label "Linux_VM"
                 }
       steps {
        echo "Hi Mallik"
