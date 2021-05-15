@@ -7,7 +7,7 @@ pipeline {
                 }
       steps {
         sh "whoami"
-       kubernetesDeploy("deploy.yml" , kubeconfigId: "mykubeconfig")
+       kubernetesDeploy(configs: "deploy.yml" , kubeconfigId: "mykubeconfig")
       }
     }
   }
