@@ -7,7 +7,7 @@ pipeline {
                 }
       steps {
         sh "whoami"
-       sh "kubectl get pods"
+       sh "kubectl apply -f deploy.yml"
       }
     }
   }
