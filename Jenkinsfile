@@ -7,7 +7,7 @@ pipeline {
     stage ('Test') {
        when {
       expression {
-       params.isDeploPod
+       params.isDeployPod
       }
     }
       agent {
