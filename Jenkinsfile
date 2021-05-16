@@ -11,7 +11,7 @@ pipeline {
       }
     }
       agent {
-                label "master"
+                label "Linux_VM"
                 }
       steps {
         sh "whoami"
