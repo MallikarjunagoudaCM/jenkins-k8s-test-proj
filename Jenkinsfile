@@ -14,8 +14,8 @@ pipeline {
                 label "Linux_VM"
                 }
       steps {
-        sh "whoami
-        sh "kubectl apply -f deploy.yml"
+        sh "whoami"
+        sh "kubect apply -f deploy.yml"
       }
     }
   }
