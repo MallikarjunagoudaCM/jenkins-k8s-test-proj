@@ -15,7 +15,7 @@ pipeline {
                 }
       steps {
         sh "whoami"
-        sh "kubectl delete deployments all"
+        sh "kubectl delete deployments --all"
         sh "kubectl apply -f deploy.yml"
       }
     }
