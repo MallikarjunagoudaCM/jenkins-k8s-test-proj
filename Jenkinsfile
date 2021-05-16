@@ -15,8 +15,7 @@ pipeline {
                 }
       steps {
         sh "whoami"
-        sh "kubectl version"
-       kubernetesDeploy(configs: "deploy.yml" , kubeconfigId: "mykubeconfig")
+        sh "kubectl apply -f deploy.yml"
       }
     }
   }
