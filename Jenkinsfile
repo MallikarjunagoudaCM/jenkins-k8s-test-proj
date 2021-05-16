@@ -4,7 +4,7 @@ pipeline {
    booleanParam(name: "isDeployPod" , defaultValue: true)
   }
   stages{
-    stage ('Test') {
+    stage ('Tests') {
        when {
       expression {
        params.isDeployPod
