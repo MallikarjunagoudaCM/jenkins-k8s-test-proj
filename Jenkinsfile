@@ -19,4 +19,13 @@ pipeline {
       }
     }
   }
+  
+  post {
+    success { 
+    echo "All good!"
+    }
+    failure{
+    echo "Failed!!!"
+    }
+  }
 }
