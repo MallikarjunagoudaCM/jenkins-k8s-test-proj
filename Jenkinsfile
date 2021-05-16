@@ -15,7 +15,6 @@ pipeline {
                 }
       steps {
         sh "whoami"
-        date
        kubernetesDeploy(configs: "deploy.yml" , kubeconfigId: "mykubeconfig")
       }
     }
