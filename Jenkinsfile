@@ -15,7 +15,7 @@ pipeline {
                 }
       steps {
         sh "whoami"
-        sh "kubect apply -f deploy.yml"
+        sh "kubectl apply -f deploy.yml"
       }
     }
   }
