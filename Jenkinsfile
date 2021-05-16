@@ -15,7 +15,6 @@ pipeline {
                 }
       steps {
         sh "whoami"
-        sh "date"
         sh "kubectl apply -f deploy.yml"
       }
     }
